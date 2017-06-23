@@ -6,6 +6,7 @@ module Avalara
   module Response
     class Invoice < Avalara::Types::Stash
 
+      property :commit, :from => :Commit
       property :doc_code, :from => :DocCode
       property :doc_date, :from => :DocDate
       property :timestamp, :from => :Timestamp
